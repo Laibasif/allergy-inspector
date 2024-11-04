@@ -155,10 +155,10 @@ def check_allergies(ingredients_text):
                 message(result, logo=bot_image, allow_html=True)
 
               
-        message("Learn more about your allergies, we are preparing a video. this may take a while.", logo=doctor_image)
-    
-        allergies = ", ".join(allergies) 
-        print(allergies)
-        generate_videos(allergies)
+        message("Learn more about your allergies, we are preparing a video. this may take a while.", logo=doctor_image
+                with st.spinner('Wait for it...'):
+                    allergies = ", ".join(allergies) 
+                    print(allergies)
+                    generate_videos(allergies)
 
                         
